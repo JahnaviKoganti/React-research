@@ -1,0 +1,26 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "I am learning react from a course!",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JahnaviKoganti/React-research.git"
+  },
+  "keywords": [],
+  "author": "Jahnavi Koganti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JahnaviKoganti/React-research/issues"
+  },
+  "homepage": "https://github.com/JahnaviKoganti/React-research#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}
