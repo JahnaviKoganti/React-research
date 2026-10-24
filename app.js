@@ -1,19 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-const heading=React.createElement(
-    "div",
-    {id:"parent"},
-    [React.createElement(
-        "div",
-        {id:"child1",key:"child1"},
-        React.createElement("h1",{},"Im a h1 tag! :3")
-    ),
-    React.createElement(
-        "div",
-        {id:"child2",key:"child2"},
-        React.createElement("h2",{},"Im a h2 tag! :3")
-    )
-    ]
-);
+const heading=React.createElement("h1",{id:"heading"},"A normal react element");
 const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+const jsxHeading=<h1 id="heading">A react element using jsx</h1>;
+const Title=()=>(
+    <h1 id="heading">Title component</h1>
+);
+const HeadingComp=() => (
+    <div>
+        {Title()}
+        <h1>func comp</h1>
+    </div>
+);
+root.render(<HeadingComp/>);
